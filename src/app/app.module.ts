@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PassoAuthComponent } from './passo-auth/passo-auth.component';
+import { PassoAuthComponent } from './components/passo-auth/passo-auth.component';
 
-import { MatButtonModule } from "@angular/material/button";
-import { MatCardModule } from "@angular/material/card";
-import { MatDividerModule } from "@angular/material/divider";
+import { ComponentsModule } from './components/components.module';
+import { ServicesModule } from './services/services.module';
 
 @NgModule({
 	declarations: [
@@ -19,9 +18,8 @@ import { MatDividerModule } from "@angular/material/divider";
 		BrowserModule,
 		AppRoutingModule,
 		BrowserAnimationsModule,
-		MatButtonModule,
-		MatCardModule,
-		MatDividerModule
+		ComponentsModule,
+		ServicesModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent]
