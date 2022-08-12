@@ -7,13 +7,15 @@ import { AuthDeezerComponent } from './auth-deezer/auth-deezer.component';
 import { AuthSpotifyComponent } from './auth-spotify/auth-spotify.component';
 import { PlaylistEditorComponent } from './playlist-editor/playlist-editor.component';
 import { TransferProgressComponent } from './transfer-progress/transfer-progress.component';
+import { PassoAuthComponent } from './passo-auth/passo-auth.component';
 
 @NgModule({
 	declarations: [
 		AuthDeezerComponent,
 		AuthSpotifyComponent,
-  PlaylistEditorComponent,
-  TransferProgressComponent
+		PlaylistEditorComponent,
+		TransferProgressComponent,
+		PassoAuthComponent
 	],
 	imports: [
 		CommonModule,
